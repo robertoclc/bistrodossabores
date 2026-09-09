@@ -1,17 +1,39 @@
 ---
+import Layout from "../layouts/Layout.astro";
 
+import Header from "../components/Header.astro";
+import Hero from "../components/Hero.astro";
+import Sobre from "../components/Sobre.astro";
+import Ambiente from "../components/Ambiente.astro";
+import Especialidades from "../components/Especialidades.astro";
+import Galeria from "../components/Galeria.astro";
+import ChamadaFinal from "../components/ChamadaFinal.astro";
+import Horarios from "../components/Horarios.astro";
+import Footer from "../components/Footer.astro";
+
+const title = "Bistrô dos Sabores | Massas e Pizzas Artesanais";
+
+const description =
+  "Bistrô dos Sabores em Queimados, RJ. Massas artesanais, pizzas, molhos e pratos especiais em um ambiente acolhedor e climatizado.";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout
+  title={title}
+  description={description}
+>
+
+  <Header />
+
+  <main>
+    <Hero />
+    <Sobre />
+    <Ambiente />
+    <Especialidades />
+    <Galeria />
+    <ChamadaFinal />
+    <Horarios />
+  </main>
+
+  <Footer />
+
+</Layout>

@@ -1,0 +1,121 @@
+---
+import "../styles/global.css";
+import SchemaRestaurant from "../components/SchemaRestaurant.astro";
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const {
+  title,
+  description = "Bistrô dos Sabores — Massas artesanais, pizzas e sabores que tornam cada momento especial.",
+} = Astro.props;
+
+const siteUrl = "https://bistrodossabores.com.br";
+const siteName = "Bistrô dos Sabores";
+const imageUrl = `${siteUrl}/images/logo.png`;
+const canonicalUrl = new URL(Astro.url.pathname, siteUrl).toString();
+---
+
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+
+    <meta charset="UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <meta
+      name="description"
+      content={description}
+    />
+
+    <meta
+      name="robots"
+      content="index, follow"
+    />
+
+    <link
+      rel="canonical"
+      href={canonicalUrl}
+    />
+
+
+    <title>{title}</title>
+
+
+    <!-- Open Graph -->
+
+    <meta
+      property="og:type"
+      content="website"
+    />
+
+    <meta
+      property="og:locale"
+      content="pt_BR"
+    />
+
+    <meta
+      property="og:site_name"
+      content={siteName}
+    />
+
+    <meta
+      property="og:title"
+      content={title}
+    />
+
+    <meta
+      property="og:description"
+      content={description}
+    />
+
+    <meta
+      property="og:url"
+      content={canonicalUrl}
+    />
+
+    <meta
+      property="og:image"
+      content={imageUrl}
+    />
+
+
+    <!-- X / Twitter -->
+
+    <meta
+      name="twitter:card"
+      content="summary"
+    />
+
+    <meta
+      name="twitter:title"
+      content={title}
+    />
+
+    <meta
+      name="twitter:description"
+      content={description}
+    />
+
+    <meta
+      name="twitter:image"
+      content={imageUrl}
+    />
+
+    <SchemaRestaurant />
+
+  </head>
+
+
+  <body>
+
+    <slot />
+
+  </body>
+</html>

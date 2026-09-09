@@ -1,0 +1,297 @@
+---
+---
+
+<section class="especialidades">
+
+  <div class="container">
+
+    <p class="section-label">
+      Nossas Especialidades
+    </p>
+
+    <h2>
+      Sabores preparados artesanalmente
+    </h2>
+
+    <div class="especialidades-grid">
+
+      <article class="especialidade-card">
+
+        <img
+          src="/images/especialidade-massas.jpg"
+          alt="Massas artesanais do Bistrô dos Sabores"
+        />
+
+        <div class="especialidade-conteudo">
+
+          <span class="numero">
+            01
+          </span>
+
+          <h3>
+            Massas Artesanais
+          </h3>
+
+          <p>
+            Massas preparadas artesanalmente, combinadas com molhos cheios de sabor.
+          </p>
+
+        </div>
+
+      </article>
+
+
+      <article class="especialidade-card">
+
+        <img
+          src="/images/especialidade-pizzas.png"
+          alt="Pizzas artesanais do Bistrô dos Sabores"
+        />
+
+        <div class="especialidade-conteudo">
+
+          <span class="numero">
+            02
+          </span>
+
+          <h3>
+            Pizzas
+          </h3>
+
+          <p>
+            Pizzas preparadas com ingredientes selecionados e sabores especiais.
+          </p>
+
+        </div>
+
+      </article>
+
+
+      <article class="especialidade-card">
+
+        <img
+          src="/images/especialidade-pratos-especiais.jpg"
+          alt="Pratos especiais do Bistrô dos Sabores"
+        />
+
+        <div class="especialidade-conteudo">
+
+          <span class="numero">
+            03
+          </span>
+
+          <h3>
+            Pratos Especiais
+          </h3>
+
+          <p>
+            Pratos preparados para transformar cada refeição em um momento especial.
+          </p>
+
+        </div>
+
+      </article>
+
+    </div>
+
+
+    <div class="especialidades-botao">
+
+      <a
+        href="/cardapio"
+        class="button"
+      >
+        Ver Cardápio Completo
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<style>
+  .especialidades {
+    padding: 100px 0;
+    background: #f7f3ed;
+  }
+
+
+  .container {
+    width: min(1120px, 90%);
+    margin: 0 auto;
+  }
+
+
+  .section-label {
+    margin: 0 0 14px;
+
+    color: #7a2b35;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    font-family: Arial, sans-serif;
+    font-size: 0.72rem;
+    font-weight: 600;
+
+    letter-spacing: 3px;
+  }
+
+
+  h2 {
+    max-width: 750px;
+
+    margin: 0 auto 50px;
+
+    color: #2c241f;
+
+    text-align: center;
+
+    font-size: clamp(2.2rem, 4vw, 3.3rem);
+    font-weight: 500;
+    line-height: 1.1;
+  }
+
+
+  .especialidades-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 28px;
+  }
+
+
+  .especialidade-card {
+    overflow: hidden;
+
+    background: #eee5dc;
+
+    border: 1px solid rgba(90, 31, 39, 0.08);
+  }
+
+
+  .especialidade-card img {
+    display: block;
+
+    width: 100%;
+    height: 270px;
+
+    object-fit: cover;
+  }
+
+
+  .especialidade-conteudo {
+    padding: 32px 28px 35px;
+  }
+
+
+  .numero {
+    display: block;
+
+    margin-bottom: 12px;
+
+    color: #9e6f45;
+
+    font-family: Georgia, serif;
+    font-size: 1.4rem;
+  }
+
+
+  h3 {
+    margin: 0 0 14px;
+
+    color: #5a1f27;
+
+    font-size: 1.35rem;
+    font-weight: 500;
+  }
+
+
+  .especialidade-conteudo p {
+    margin: 0;
+
+    color: #5d5049;
+
+    font-family: Arial, sans-serif;
+    font-size: 0.92rem;
+
+    line-height: 1.7;
+  }
+
+
+  .especialidades-botao {
+    margin-top: 45px;
+
+    text-align: center;
+  }
+
+
+  .button {
+    display: inline-block;
+
+    padding: 15px 30px;
+
+    color: white;
+    background: #5a1f27;
+
+    text-decoration: none;
+
+    font-family: Arial, sans-serif;
+    font-size: 0.78rem;
+    font-weight: bold;
+
+    letter-spacing: 0.5px;
+
+    transition: all 0.2s ease;
+  }
+
+
+  .button:hover {
+    background: #7a2b35;
+  }
+
+
+  @media (max-width: 850px) {
+
+    .especialidades-grid {
+      grid-template-columns: 1fr;
+
+      max-width: 650px;
+
+      margin: 0 auto;
+    }
+
+
+    .especialidade-card img {
+      height: 320px;
+    }
+
+  }
+
+
+  @media (max-width: 600px) {
+
+    .especialidades {
+      padding: 75px 0;
+    }
+
+
+    h2 {
+      margin-bottom: 35px;
+    }
+
+
+    .especialidade-card img {
+      height: 240px;
+    }
+
+
+    .especialidade-conteudo {
+      padding: 27px 22px 30px;
+    }
+
+  }
+</style>

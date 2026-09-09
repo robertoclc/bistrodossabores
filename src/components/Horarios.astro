@@ -1,0 +1,117 @@
+---
+---
+
+<section class="hours">
+
+  <div class="container">
+
+    <p class="section-label">
+      Venha nos visitar
+    </p>
+
+    <h2>
+      Horário de funcionamento
+    </h2>
+
+    <div class="hours-list">
+
+      <div>
+        <strong>
+          Quarta a domingo
+        </strong>
+
+        <span>
+          19h30 às 23h30
+        </span>
+      </div>
+
+      <div>
+        <strong>
+          Almoço aos domingos
+        </strong>
+
+        <span>
+          12h às 14h30
+        </span>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<style>
+  .hours {
+    padding: 105px 0;
+    text-align: center;
+    background: #f7f3ed;
+  }
+
+  .container {
+    width: min(1120px, 90%);
+    margin: 0 auto;
+  }
+
+  .section-label {
+    margin: 0 0 15px;
+
+    color: #8b674d;
+
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+    font-family: Arial, sans-serif;
+    font-size: 0.7rem;
+  }
+
+  h2 {
+    margin: 15px 0 30px;
+
+    color: #2c241f;
+
+    font-size: clamp(2.2rem, 4vw, 3.4rem);
+    line-height: 1.1;
+
+    font-weight: 500;
+  }
+
+  .hours-list {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+
+    margin-top: 50px;
+  }
+
+  .hours-list div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hours-list strong {
+    color: #2c241f;
+    font-size: 1.1rem;
+  }
+
+  .hours-list span {
+    color: #2c241f;
+
+    font-family: Arial, sans-serif;
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 700px) {
+
+    .hours {
+      padding: 80px 0;
+    }
+
+    .hours-list {
+      flex-direction: column;
+      gap: 30px;
+    }
+
+  }
+</style>

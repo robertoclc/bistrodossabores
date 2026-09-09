@@ -1,0 +1,135 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+
+const title = "Cardápio | Bistrô dos Sabores";
+
+const description =
+  "Confira o cardápio do Bistrô dos Sabores em Queimados, RJ. Massas artesanais, pizzas, pratos especiais, molhos e muito mais.";
+---
+
+<Layout
+  title={title}
+  description={description}
+>
+
+  <Header />
+
+  <main class="cardapio">
+
+    <div class="cardapio-imagens">
+
+      <img
+        src="/images/cardapio-pag1.jpg"
+        alt="Cardápio do Bistrô dos Sabores - página 1"
+      />
+
+      <img
+        src="/images/cardapio-pag2.jpg"
+        alt="Cardápio do Bistrô dos Sabores - página 2"
+      />
+
+    </div>
+
+
+    <div class="cardapio-pedido">
+
+      <a
+        href="https://www.whatsmenu.com.br/bistrodossabores"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="button"
+      >
+        Pedir Online
+      </a>
+
+    </div>
+
+  </main>
+
+  <Footer />
+
+</Layout>
+
+
+<style>
+  :global(*) {
+    box-sizing: border-box;
+  }
+
+  :global(body) {
+    margin: 0;
+    background: #2d0c11;
+  }
+
+  .cardapio {
+    padding-top: 120px;
+    padding-bottom: 60px;
+  }
+
+  .cardapio-imagens {
+    width: min(1000px, 94%);
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 30px;
+  }
+
+  .cardapio-imagens img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+  }
+
+  .cardapio-pedido {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 40px;
+  }
+
+  .button {
+    display: inline-block;
+
+    padding: 15px 30px;
+
+    color: #ffffff;
+    background: #5a1f27;
+
+    text-decoration: none;
+
+    font-family: Arial, sans-serif;
+    font-size: 0.78rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+
+    transition: all 0.2s ease;
+  }
+
+  .button:hover {
+    background: #7a2b35;
+  }
+
+  @media (max-width: 700px) {
+
+    .cardapio {
+      padding-top: 105px;
+      padding-bottom: 30px;
+    }
+
+    .cardapio-imagens {
+      width: 100%;
+      gap: 15px;
+    }
+
+    .cardapio-pedido {
+      margin-top: 30px;
+    }
+
+  }
+</style>

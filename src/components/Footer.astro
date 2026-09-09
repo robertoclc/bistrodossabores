@@ -1,0 +1,330 @@
+---
+---
+
+<footer id="contato">
+
+  <div class="container footer-content">
+
+    <img
+      src="/images/logo.png"
+      alt="Bistrô dos Sabores"
+      class="footer-logo"
+    />
+
+    <p class="footer-slogan">
+      Massas, Pizzas e Molhos Artesanais
+    </p>
+
+
+    <div class="footer-main">
+
+      <div class="footer-info">
+
+        <span class="endereco">
+          Rua Aida, 82 — Centro — Queimados/RJ
+        </span>
+
+        <a
+          href="https://wa.me/5521994876774"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="whatsapp"
+        >
+          <img
+            src="/images/whatsapp.png"
+            alt="WhatsApp"
+          />
+
+          <span>
+            (21) 99487-6774
+          </span>
+        </a>
+
+      </div>
+
+
+      <div class="footer-social">
+
+        <a
+          href="https://www.instagram.com/bistrodossabores"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram do Bistrô dos Sabores"
+        >
+          <img
+            src="/images/instagram.png"
+            alt="Instagram"
+          />
+        </a>
+
+        <a
+          href="https://www.facebook.com/bistrodossabores"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Facebook do Bistrô dos Sabores"
+        >
+          <img
+            src="/images/facebook.png"
+            alt="Facebook"
+          />
+        </a>
+
+        <a
+          href="https://www.youtube.com/@bistrodossabores"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="YouTube do Bistrô dos Sabores"
+        >
+          <img
+            src="/images/youtube.png"
+            alt="YouTube"
+          />
+        </a>
+
+        <a
+          href="https://x.com/bistro_sabores"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="X do Bistrô dos Sabores"
+        >
+          <img
+            src="/images/x.png"
+            alt="X"
+          />
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+      © 2026 Bistrô dos Sabores — Todos os direitos reservados.
+    </div>
+
+  </div>
+
+</footer>
+
+
+<style>
+  footer {
+    padding: 55px 0 25px;
+
+    color: white;
+    background: #241417;
+
+    text-align: center;
+
+    font-family: Arial, sans-serif;
+  }
+
+
+  .container {
+    width: min(1120px, 90%);
+    margin: 0 auto;
+  }
+
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .footer-logo {
+    width: 100px;
+    height: 100px;
+
+    object-fit: contain;
+    border-radius: 50%;
+
+    margin-bottom: 15px;
+  }
+
+
+  .footer-slogan {
+    margin: 0 0 35px;
+
+    color: #d7b56d;
+
+    font-size: 1.35rem;
+    font-weight: 600;
+
+    letter-spacing: 0.5px;
+    line-height: 1.3;
+  }
+
+
+  .footer-main {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 70px;
+  }
+
+
+  .footer-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 35px;
+
+    color: #f7f3ed;
+
+    font-size: 0.95rem;
+  }
+
+
+  .endereco {
+    white-space: nowrap;
+  }
+
+
+  .footer-info a {
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+
+    color: #f7f3ed;
+
+    text-decoration: none;
+  }
+
+
+  .footer-info a:hover {
+    color: #e2c17b;
+  }
+
+
+  .whatsapp img {
+    width: 42px;
+    height: 42px;
+
+    object-fit: contain;
+  }
+
+
+  .footer-social {
+    display: flex;
+    align-items: center;
+
+    gap: 18px;
+  }
+
+
+  .footer-social a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 38px;
+    height: 38px;
+
+    transition:
+      transform 0.2s ease,
+      opacity 0.2s ease;
+  }
+
+
+  .footer-social img {
+    width: 32px;
+    height: 32px;
+
+    object-fit: contain;
+  }
+
+
+  .footer-social a:hover {
+    transform: translateY(-2px);
+    opacity: 0.75;
+  }
+
+
+  .footer-bottom {
+    width: 100%;
+
+    margin-top: 35px;
+    padding-top: 18px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+
+    color: #d8cbc3;
+
+    font-size: 0.72rem;
+  }
+
+
+  @media (max-width: 1000px) {
+
+    .footer-main {
+      gap: 40px;
+    }
+
+    .footer-info {
+      gap: 25px;
+    }
+
+  }
+
+
+  @media (max-width: 850px) {
+
+    .footer-main {
+      flex-direction: column;
+
+      gap: 25px;
+    }
+
+    .footer-info {
+      justify-content: center;
+
+      flex-wrap: wrap;
+    }
+
+  }
+
+
+  @media (max-width: 600px) {
+
+    footer {
+      padding-top: 45px;
+    }
+
+
+    .footer-slogan {
+      max-width: 300px;
+
+      margin-bottom: 30px;
+    }
+
+
+    .footer-main {
+      gap: 25px;
+    }
+
+
+    .footer-info {
+      flex-direction: column;
+
+      gap: 12px;
+    }
+
+
+    .endereco {
+      white-space: normal;
+    }
+
+
+    .footer-social {
+      gap: 18px;
+    }
+
+  }
+</style>

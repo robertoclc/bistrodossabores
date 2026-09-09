@@ -1,0 +1,358 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+
+const title = "Contato | Bistrô dos Sabores";
+
+const description =
+  "Entre em contato com o Bistrô dos Sabores em Queimados, RJ. Endereço, telefone, WhatsApp, horários de funcionamento e localização.";
+---
+
+<Layout
+  title={title}
+  description={description}
+>
+
+  <Header />
+
+  <main class="contato">
+
+    <section class="contato-hero">
+      <div class="container">
+
+        <p class="section-label">
+          Bistrô dos Sabores
+        </p>
+
+        <h1>
+          Entre em contato
+        </h1>
+
+        <p class="intro">
+          Será um prazer receber você no Bistrô dos Sabores.
+        </p>
+
+      </div>
+    </section>
+
+
+    <section class="informacoes">
+      <div class="container informacoes-grid">
+
+        <div class="info-card">
+          <h2>Onde estamos</h2>
+
+          <p>
+            Rua Aida, 82 – Centro
+          </p>
+
+          <p>
+            Queimados – RJ
+          </p>
+
+          <p class="referencia">
+            Próximo à Prefeitura e ao Hospital Infantil.
+          </p>
+        </div>
+
+
+        <div class="info-card">
+          <h2>Fale conosco</h2>
+
+          <p>
+            <strong>WhatsApp</strong>
+          </p>
+
+          <p>
+            (21) 99487-6774
+          </p>
+
+          <a
+            href="https://wa.me/5521994876774"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="button"
+          >
+            Falar pelo WhatsApp
+          </a>
+        </div>
+
+
+        <div class="info-card">
+          <h2>Horários</h2>
+
+          <p>
+            <strong>Quarta a sábado</strong><br />
+            19h30 às 23h30
+          </p>
+
+          <p>
+            <strong>Domingo</strong><br />
+            Almoço: 12h às 14h30<br />
+            Jantar: 19h30 às 23h30
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section class="mapa">
+      <div class="container">
+
+        <h2>Venha nos visitar</h2>
+
+        <div class="mapa-container">
+          <iframe
+            src="https://www.google.com/maps?q=Rua+Aida,+82,+Centro,+Queimados,+RJ&output=embed"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section class="pedido">
+      <div class="container">
+
+        <p class="section-label">
+          Bistrô dos Sabores
+        </p>
+
+        <h2>
+          Já sabe o que vai pedir?
+        </h2>
+
+        <p>
+          Confira nosso cardápio e faça seu pedido online.
+        </p>
+
+        <a
+          href="https://www.whatsmenu.com.br/bistrodossabores"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="button button-pedido"
+        >
+          Pedir Online
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <Footer />
+
+</Layout>
+
+
+<style>
+  :global(*) {
+    box-sizing: border-box;
+  }
+
+  :global(body) {
+    margin: 0;
+    background: #2d0c11;
+    color: #f7f3ed;
+  }
+
+  .container {
+    width: min(1120px, 90%);
+    margin: 0 auto;
+  }
+
+  .contato {
+    padding-top: 120px;
+  }
+
+  .contato-hero {
+    padding: 70px 0 55px;
+    text-align: center;
+  }
+
+  .section-label {
+    margin: 0 0 15px;
+    color: #d7b56d;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: Arial, sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+  }
+
+  h1 {
+    margin: 0;
+    color: #f7f3ed;
+    font-size: clamp(2.4rem, 5vw, 4rem);
+    line-height: 1.1;
+    font-weight: 500;
+  }
+
+  .intro {
+    margin: 20px auto 0;
+    max-width: 650px;
+    color: #ddd2ca;
+    font-size: 1.05rem;
+    line-height: 1.7;
+  }
+
+  .informacoes {
+    padding: 30px 0 80px;
+  }
+
+  .informacoes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+  }
+
+  .info-card {
+    padding: 35px 30px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(215, 181, 109, 0.25);
+    text-align: center;
+  }
+
+  .info-card h2 {
+    margin: 0 0 25px;
+    color: #e2c17b;
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+
+  .info-card p {
+    margin: 8px 0;
+    color: #f7f3ed;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+
+  .info-card .referencia {
+    margin-top: 18px;
+    color: #cbbdb5;
+    font-size: 0.9rem;
+  }
+
+  .info-card strong {
+    color: #e2c17b;
+  }
+
+  .button {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 14px 25px;
+    color: #ffffff;
+    background: #5a1f27;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: all 0.2s ease;
+  }
+
+  .button:hover {
+    background: #7a2b35;
+  }
+
+  .mapa {
+    padding: 20px 0 80px;
+  }
+
+  .mapa h2 {
+    margin: 0 0 30px;
+    color: #f7f3ed;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  .mapa-container {
+    width: 100%;
+    height: 420px;
+    overflow: hidden;
+    border: 1px solid rgba(215, 181, 109, 0.25);
+  }
+
+  .mapa-container iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+  .pedido {
+    padding: 90px 0;
+    background: #2d0c11;
+    text-align: center;
+    border-top: 1px solid rgba(215, 181, 109, 0.2);
+  }
+
+  .pedido h2 {
+    margin: 0 auto 15px;
+    color: #f7f3ed;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 500;
+  }
+
+  .pedido p:not(.section-label) {
+    margin: 0 auto;
+    color: #d8cbc3;
+    font-size: 1rem;
+  }
+
+  .button-pedido {
+    margin-top: 30px;
+    padding: 15px 32px;
+  }
+
+  @media (max-width: 800px) {
+
+    .informacoes-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .mapa-container {
+      height: 350px;
+    }
+
+  }
+
+  @media (max-width: 700px) {
+
+    .contato {
+      padding-top: 105px;
+    }
+
+    .contato-hero {
+      padding: 55px 0 40px;
+    }
+
+    .informacoes {
+      padding-bottom: 50px;
+    }
+
+    .info-card {
+      padding: 30px 22px;
+    }
+
+    .mapa {
+      padding-bottom: 55px;
+    }
+
+    .mapa-container {
+      height: 300px;
+    }
+
+    .pedido {
+      padding: 70px 0;
+    }
+
+  }
+</style>
