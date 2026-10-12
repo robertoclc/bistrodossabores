@@ -19,20 +19,32 @@ const description =
 
   <main class="cardapio">
 
+    <section class="cardapio-intro">
+      <div class="cardapio-intro-conteudo">
+
+        <h1>Nosso Cardápio</h1>
+
+        <p class="cardapio-descricao">
+          Confira o cardápio do Bistrô dos Sabores em Queimados, RJ.
+          Massas artesanais, pizzas, pratos especiais, molhos e muito mais.
+        </p>
+
+      </div>
+    </section>
+
     <div class="cardapio-imagens">
 
       <img
         src="/images/cardapio-pag1.jpg"
-        alt="Cardápio do Bistrô dos Sabores - página 1"
+        alt="Primeira página do cardápio do Bistrô dos Sabores, restaurante de massas artesanais e pizzaria em Queimados, RJ"
       />
 
       <img
         src="/images/cardapio-pag2.jpg"
-        alt="Cardápio do Bistrô dos Sabores - página 2"
+        alt="Segunda página do cardápio do Bistrô dos Sabores, com opções de massas, pizzas e pratos especiais em Queimados, RJ"
       />
 
     </div>
-
 
     <div class="cardapio-pedido">
 
@@ -53,7 +65,6 @@ const description =
 
 </Layout>
 
-
 <style>
   :global(*) {
     box-sizing: border-box;
@@ -69,19 +80,44 @@ const description =
     padding-bottom: 60px;
   }
 
+  .cardapio-intro {
+    width: min(1000px, 90%);
+    margin: 0 auto 35px;
+    text-align: center;
+  }
+
+  .cardapio-intro-conteudo {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+
+  .cardapio-intro h1 {
+    margin: 0;
+    color: #f7f3ed;
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.15;
+    font-weight: 500;
+  }
+
+  .cardapio-descricao {
+    max-width: 680px;
+    margin: 18px auto 0;
+    color: #e0d4cd;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
   .cardapio-imagens {
     width: min(1000px, 94%);
     margin: 0 auto;
-
     display: flex;
     flex-direction: column;
-
     gap: 30px;
   }
 
   .cardapio-imagens img {
     display: block;
-
     width: 100%;
     height: auto;
   }
@@ -89,25 +125,19 @@ const description =
   .cardapio-pedido {
     display: flex;
     justify-content: center;
-
     margin-top: 40px;
   }
 
   .button {
     display: inline-block;
-
     padding: 15px 30px;
-
     color: #ffffff;
     background: #5a1f27;
-
     text-decoration: none;
-
     font-family: Arial, sans-serif;
     font-size: 0.78rem;
     font-weight: bold;
     letter-spacing: 0.5px;
-
     transition: all 0.2s ease;
   }
 
@@ -116,10 +146,23 @@ const description =
   }
 
   @media (max-width: 700px) {
-
     .cardapio {
       padding-top: 105px;
       padding-bottom: 30px;
+    }
+
+    .cardapio-intro {
+      width: 90%;
+      margin-bottom: 25px;
+    }
+
+    .cardapio-intro h1 {
+      font-size: 2rem;
+    }
+
+    .cardapio-descricao {
+      font-size: 0.92rem;
+      line-height: 1.7;
     }
 
     .cardapio-imagens {
@@ -130,6 +173,5 @@ const description =
     .cardapio-pedido {
       margin-top: 30px;
     }
-
   }
 </style>
