@@ -14,14 +14,25 @@
       <span>É um momento para saborear.</span>
     </h2>
 
-    <a
-      href="https://www.whatsmenu.com.br/bistrodossabores"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="button button-light"
-    >
-      Pedir Online
-    </a>
+    <div class="cta-buttons">
+
+      <a
+        href="/cardapio"
+        class="button button-light"
+      >
+        Ver Cardápio
+      </a>
+
+      <a
+        href="https://www.whatsmenu.com.br/bistrodossabores"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="button button-outline"
+      >
+        Pedir Online
+      </a>
+
+    </div>
 
   </div>
 
@@ -90,13 +101,18 @@
     font-style: italic;
   }
 
+  .cta-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+    flex-wrap: wrap;
+  }
+
   .button {
     display: inline-block;
 
     padding: 15px 30px;
-
-    color: #2c241f;
-    background: #f7f3ed;
 
     text-decoration: none;
 
@@ -108,14 +124,37 @@
     transition: all 0.2s ease;
   }
 
-  .button:hover {
+  .button-light {
+    color: #2c241f;
+    background: #f7f3ed;
+  }
+
+  .button-light:hover {
     background: #e5c27a;
+  }
+
+  .button-outline {
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+  }
+
+  .button-outline:hover {
+    background: white;
+    color: #2c241f;
   }
 
   @media (max-width: 700px) {
 
     .cta {
       padding: 80px 0;
+    }
+
+    .cta-buttons {
+      gap: 28px;
+    }
+
+    .button {
+      padding: 14px 22px;
     }
 
   }

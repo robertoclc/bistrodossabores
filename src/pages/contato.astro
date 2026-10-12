@@ -37,37 +37,25 @@ const description =
       </div>
     </section>
 
-
     <section class="informacoes">
       <div class="container informacoes-grid">
 
         <div class="info-card">
           <h2>Onde estamos</h2>
 
-          <p>
-            Rua Aida, 82 – Centro
-          </p>
-
-          <p>
-            Queimados – RJ
-          </p>
+          <p>Rua Aida, 82 – Centro</p>
+          <p>Queimados – RJ</p>
 
           <p class="referencia">
             Próximo à Prefeitura e ao Hospital Infantil.
           </p>
         </div>
 
-
         <div class="info-card">
           <h2>Fale conosco</h2>
 
-          <p>
-            <strong>WhatsApp</strong>
-          </p>
-
-          <p>
-            (21) 99487-6774
-          </p>
+          <p><strong>WhatsApp</strong></p>
+          <p>(21) 99487-6774</p>
 
           <a
             href="https://wa.me/5521994876774"
@@ -79,9 +67,13 @@ const description =
           </a>
         </div>
 
-
         <div class="info-card">
           <h2>Horários</h2>
+
+          <p>
+            <strong>Segunda e terça</strong><br />
+            Fechado
+          </p>
 
           <p>
             <strong>Quarta a sábado</strong><br />
@@ -98,7 +90,6 @@ const description =
       </div>
     </section>
 
-
     <section class="mapa">
       <div class="container">
 
@@ -106,7 +97,7 @@ const description =
 
         <div class="mapa-container">
           <iframe
-            src="https://www.google.com/maps?q=Rua+Aida,+82,+Centro,+Queimados,+RJ&output=embed"
+            src="https://www.google.com/maps?q=Rua+Aida,+82,+26383-320,+Queimados,+RJ,+Brasil&output=embed"
             loading="lazy"
             allowfullscreen
             referrerpolicy="no-referrer-when-downgrade"
@@ -115,7 +106,6 @@ const description =
 
       </div>
     </section>
-
 
     <section class="pedido">
       <div class="container">
@@ -132,14 +122,25 @@ const description =
           Confira nosso cardápio e faça seu pedido online.
         </p>
 
-        <a
-          href="https://www.whatsmenu.com.br/bistrodossabores"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button button-pedido"
-        >
-          Pedir Online
-        </a>
+        <div class="pedido-buttons">
+
+          <a
+            href="/cardapio"
+            class="button button-cardapio"
+          >
+            Ver Cardápio
+          </a>
+
+          <a
+            href="https://www.whatsmenu.com.br/bistrodossabores"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="button button-pedido"
+          >
+            Pedir Online
+          </a>
+
+        </div>
 
       </div>
     </section>
@@ -149,7 +150,6 @@ const description =
   <Footer />
 
 </Layout>
-
 
 <style>
   :global(*) {
@@ -307,13 +307,37 @@ const description =
     font-size: 1rem;
   }
 
+  .pedido-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 28px;
+    flex-wrap: nowrap;
+  }
+
+  .pedido-buttons .button {
+    margin-top: 0;
+    min-width: 190px;
+    text-align: center;
+  }
+
   .button-pedido {
-    margin-top: 30px;
     padding: 15px 32px;
   }
 
-  @media (max-width: 800px) {
+  .button-cardapio {
+    padding: 15px 32px;
+    background: #f7f3ed;
+    color: #2c241f;
+  }
 
+  .button-cardapio:hover {
+    background: #e5c27a;
+  }
+
+  @media (max-width: 800px) {
     .informacoes-grid {
       grid-template-columns: 1fr;
     }
@@ -321,11 +345,9 @@ const description =
     .mapa-container {
       height: 350px;
     }
-
   }
 
   @media (max-width: 700px) {
-
     .contato {
       padding-top: 105px;
     }
@@ -354,5 +376,14 @@ const description =
       padding: 70px 0;
     }
 
+    .pedido-buttons {
+      gap: 12px;
+    }
+
+    .pedido-buttons .button {
+      min-width: 0;
+      padding: 14px 16px;
+      font-size: 0.72rem;
+    }
   }
 </style>
