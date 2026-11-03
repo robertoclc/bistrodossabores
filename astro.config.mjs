@@ -3,8 +3,8 @@ import sitemap from "@astrojs/sitemap";
 
 export default defineConfig({
   site: "https://bistrodossabores.com.br",
-
-  integrations: [
-    sitemap()
-  ]
+build: {
+    format: "file",
+  },
+  integrations: [sitemap()],
 });
