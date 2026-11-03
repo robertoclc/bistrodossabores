@@ -5,6 +5,7 @@ export default defineConfig({
   site: "https://bistrodossabores.com.br",
 build: {
     format: "file",
-  },
+    },
+  trailingSlash: "never",
   integrations: [sitemap()],
 });
